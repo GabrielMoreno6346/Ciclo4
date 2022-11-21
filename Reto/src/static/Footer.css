@@ -1,0 +1,127 @@
+@import "General.css";
+
+.FooterCont{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.Footer1{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+    .footsubcont span{
+        font-size: 1.2em;
+        /* margin-left: 50px; */
+        margin-left: 150px;
+        font-weight: bold;
+    }
+    .subspan{
+        font-size: 1.2em;
+        margin-left: 50px !important;
+        font-weight: bold;
+    }
+    .footertitle{
+        align-self: center;
+    }
+    .lists{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .sublist{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(20%);
+        justify-content: center;
+    }
+    .suscribir{
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+    }
+        .emailsub{
+            display: flex;
+        }
+        .btn-dark{
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            left: 250px;
+            transform: translateY(-4px);
+            background-color: #666666;
+        }
+        .subs{
+            width: 220px;
+            height: 25px;
+            transform: translateY(-5px);
+        }
+.Footer2{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+    .Redes{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .Redes img{
+            width: 25px;
+            height: 25px;
+            margin: 0 10px;
+        }
+        .line1{
+            width: 1px;
+            height: 70%;
+            background-color: #000000;
+            margin-left: 10px;
+        }
+        .line2{
+            width: 100%;
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            top: 0;
+        }
+    .Contactos1{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+        .phone{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+            .phone img{
+                height: 25px;
+            }
+            .phone span{
+                margin-left: 10px;
+            }
+        .email{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+            .email img{
+                height: 20px;
+            }
+            .email span{
+                margin-left: 15px;
+            }

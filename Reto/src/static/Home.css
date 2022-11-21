@@ -1,0 +1,97 @@
+@import "General.css";
+
+.cont{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 30% 20% 20% 20%;
+}
+.HomeContent{
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: 50% 50% / 33.33% 33.33% 33.33% !important;
+    grid-template-areas: 
+    "gest comm comm"
+    "gest news news";
+}
+    .gest{
+        height: 100%;
+        width: 100%;
+        background-color: green;
+        grid-area: gest;
+    }
+    .comm{
+        height: 100%;
+        width: 100%;
+        grid-area: comm;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .comm div{
+        display: flex;
+        align-items: center;
+    }
+        .comm div img{
+            width: 60px;
+            height: 50px; 
+            position: absolute;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .Lorem{
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            margin-left: 100px;
+        }
+        .Ltitle{
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+    .newsSection{
+        height: 100%;
+        width: 100%;
+        grid-area: news;
+    }
+        .newsMark{
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-left: 100px;;
+        }
+        .newsContent{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .new{
+            width: 100%;
+            height: 100%;
+        }
+        .newTitle{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .newsubTitle{
+            margin-left: 10px;
+        }
+        .newMain{
+            width: 90%;
+            height: 100%;
+            margin-bottom: -200px;
+            margin-left: 20px;
+        }
+.gestion{
+    width: 100%;
+    height: 100%;
+}
+.noticias{
+    width: 100%;
+    height: 100%;
+}
+.opiniones{
+    width: 100%;
+    height: 100%;
+}

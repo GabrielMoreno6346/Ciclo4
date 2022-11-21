@@ -1,0 +1,10 @@
+@import "General.css";
+
+button:hover{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

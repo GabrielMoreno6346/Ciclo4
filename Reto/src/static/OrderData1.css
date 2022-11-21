@@ -1,0 +1,28 @@
+@import "General.css";
+
+.OrderData1Body{
+    width: 100%;
+    height: 100%;
+}
+.OrderData1Form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.dat{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.delic{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.delicr{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}

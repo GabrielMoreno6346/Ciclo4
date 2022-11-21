@@ -1,0 +1,21 @@
+@import "General.css";
+.OrdersListBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.OrdersListMain{
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.OrdersListHeader{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
