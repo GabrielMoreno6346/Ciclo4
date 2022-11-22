@@ -3,15 +3,28 @@
 .CreateOrderBody{
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 30% 20% 20% 20%;
+    background-color: #999999;
+}
+.CreateOrderChart{
+    width: 50%;
+    height: 90%;
+    background-color: white;
+}
+.CreateOrderContent{
+    grid-row: 2 / 5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .CreateOrderForm{
-    width: 50%;
-    height: 70%;
+    width: 95%;
+    height: 100%;
     display: grid;
-    grid-template-rows: 30% 60% 10%;
+    grid-template-rows: 35% 60% 5%;
+    padding: 10px;
+    margin: 0 auto;
 }
 .CreateOrderBtn{
     align-self: end;

@@ -1,11 +1,17 @@
 @import "General.css";
 
-.SignUpBody{
+.SignupBody{
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 30% 20% 20% 20%;
+}
+.SignUpContent{
+    grid-row: 2 / 5;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #999999;
 }
 .SignUpForm{
     width: 15%;

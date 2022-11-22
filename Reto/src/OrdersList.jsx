@@ -1,6 +1,8 @@
 import './static/OrdersList.css'
 import {Link} from './components/Link'
 import {Order} from './components/Order'
+import {NavBar} from './components/NavBar'
+import {Footer} from './components/Footer'
 
 const AllOrders=[
   {ido:1, date:"2022-11-18", time1:"16:00", time2:"19:30", Largo:"40", Ancho:"30", 
@@ -28,21 +30,28 @@ const AllOrders=[
 function OrdersList() {
   return (
     <div className='OrdersListBody'>
-      <div className='OrdersListMain'>
-          <Link addr="/CreateOrder" LDisplay="Crear Order"></Link>
-          <ul className='OrdersListHeader'>
-              <li>Servicio</li>
-              <li>Fecha</li>
-              <li>Ciudad Entrega</li>
-              <li>Dirección Entrega</li>
-              <li>Estado</li>
-          </ul>
-          {AllOrders.map((order)=>
-            <Order OrderData={order}
-            key={order.ido}>  
-            </Order>
-          )}
-        </div>
+      <NavBar></NavBar>
+      <div className='OrdersListContent'>
+        <div className='OrdersListMain'>
+            <Link addr="/CreateOrder" className="OrdersListLink" LDisplay="Crear Order"></Link>
+            <ul className='OrdersListHeader'>
+                <li>Servicio</li>
+                <li>Fecha</li>
+                <li>Ciudad Entrega</li>
+                <li>Dirección Entrega</li>
+                <li>Estado</li>
+                <li>Acción</li>
+            </ul>
+            <div className='OrdersListList'>
+              {AllOrders.map((order)=>
+                <Order OrderData={order}
+                key={order.ido}>  
+                </Order>
+              )}
+            </div>
+          </div>
+      </div>
+      <Footer></Footer>
     </div>
   )
 }

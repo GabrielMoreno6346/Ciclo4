@@ -8,13 +8,14 @@ import {Footer} from './components/Footer'
 function Login() {
   return (
     <div className='LoginBody'>
-      <Login></Login>
+      <NavBar></NavBar>
       <div className='LoginContent'>
+        <span>Iniciar Sesión</span>
         <div className='LoginForm'>
           <Link addr='/SignUp' LDisplay="Registrarse"></Link>
-          <Input holder="Usuario"></Input>
-          <Input holder="Contraseña"></Input>
-          <Button BDisplay="Login" addr="/OrdersList"></Button>
+          <Input className="imp" holder="Usuario"></Input>
+          <Input className="imp" holder="Contraseña"></Input>
+          <Button className= "btn btn-light Loginbtn" BDisplay="Login" addr="/OrdersList"></Button>
         </div>
       </div>
       <Footer></Footer>

@@ -45,13 +45,15 @@ export const OrderData1=({date, time1, time2, important})=>{
   return (
     <div className='OrderData1Body'>
       <div className='OrderData1Form'>
+        <span className='OrderData1Title'>Crear Orden</span> 
         <div className='dat'>
-          <input type="date" min={getDate()} value={state.date} 
+          <span>Fecha y franja horaria disponible para la recogida del paquete</span>
+          <input className='date' type="date" min={getDate()} value={state.date} 
             onChange={(event) => handleOnChange("date", event.target.value)}></input>
-          <input type="time" min={getTime()} value={state.time1} 
+          <input className='Time' type="time" min={getTime()} value={state.time1} 
             onChange={(event) => {handleOnChange("time1", event.target.value); handleOnchangeTime1(event)}}></input>
-          <span>-</span>
-          <input type="time" min={getTime()} value={state.time2}
+          <span className='sep'> - </span>
+          <input className='Time' type="time" min={getTime()} value={state.time2}
             onChange={(event) => {handleOnChange("time2", event.target.value); handleOnchangeTime2(event)}}></input>
         </div>
         <div className='delic'>

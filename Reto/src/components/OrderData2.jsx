@@ -22,7 +22,7 @@ AddRecogida, CiudadRecogida, nd, cd, AddEntrega, CiudadEntrega, status})=>{
         <div><Input holder="Largo (cm)" value={state.Largo} attribute="Largo" handleOnChange={handleOnChange}></Input></div>
         <div><Input holder="Ancho (cm)" value={state.Ancho} handleOnChange={handleOnChange}></Input></div>
         <div><Input holder="Alto (cm)" value={state.Alto} handleOnChange={handleOnChange}></Input></div>
-        <div><Input holder="Peso Aprox. (kg) "value={state.Peso} handleOnChange={handleOnChange}></Input></div>
+        <div><Input holder="Peso (kg) "value={state.Peso} handleOnChange={handleOnChange}></Input></div>
       </div>
       <div><Input holder="Nombre remitente" value={state.nr} handleOnChange={handleOnChange}></Input></div>
       <div><Input holder="Nombre destinatario" value={state.nd} handleOnChange={handleOnChange}></Input></div>
