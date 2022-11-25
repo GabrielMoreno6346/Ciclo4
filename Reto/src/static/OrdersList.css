@@ -23,16 +23,21 @@
 .OrdersListHeader{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 10% 20% 15% 20% 15% 20%;
     justify-items: center;
     background-color: #cccccc;
+    padding: 0;
+    padding-right: 15px;
     margin-bottom: 0;
 }
 .OrdersListList{
     background-color: white;
     max-height: 250px;
-    overflow: auto;
+    overflow-y: scroll;
 }
 .OrdersListLink{
     color: white;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
 }

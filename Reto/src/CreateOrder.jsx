@@ -15,7 +15,7 @@ function CreateOrder() {
               <OrderData1></OrderData1>
               <OrderData2></OrderData2>
               <div className="CreateOrderBtn">
-                <Button BDisplay="Crear Orden" addr="/OrdersList"></Button>
+                <Button BDisplay="Crear Orden" addr="/OrdersList" className="btn btn-dark btnCreate"></Button>
               </div>
           </div>
         </div>

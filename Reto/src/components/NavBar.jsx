@@ -20,7 +20,7 @@ export const NavBar = () => {
                         <div></div>
                         <LinkB addr='/' LDisplay="SERVICIOS"></LinkB>
                     </div>
-                    <Button BDisplay="Ingresar" addr="/Login"></Button>
+                    <Button BDisplay="Ingresar" addr="/Login" className="btn btn-light"></Button>
                 </div>
             </div>
         </div>

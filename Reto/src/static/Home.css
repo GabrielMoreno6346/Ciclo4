@@ -2,17 +2,21 @@
 
 .cont{
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     display: grid;
-    grid-template-rows: 10% 30% 20% 20% 20%;
+    grid-template-rows: 5% 30% 20% 20% 10%;
+    overflow: auto;
 }
 .HomeContent{
+    width: 100%;
+    height: 100%;
     grid-row: 2 / 5;
     display: grid;
-    grid-template-columns: 50% 50% / 33.33% 33.33% 33.33% !important;
+    grid-template: 50% 50% / 25% 75%;
     grid-template-areas: 
-    "gest comm comm"
-    "gest news news";
+    "gest comm"
+    "gest news";
+    overflow: auto;
 }
     .gest{
         height: 100%;
@@ -32,7 +36,7 @@
         display: flex;
         align-items: center;
     }
-        .comm div img{
+        /* .comm div img{
             width: 60px;
             height: 50px; 
             position: absolute;
@@ -44,7 +48,7 @@
             height: 40px;
             position: absolute;
             margin-left: 100px;
-        }
+        } */
         .Ltitle{
             font-size: 1.2em;
             font-weight: bolder;
@@ -57,31 +61,13 @@
         .newsMark{
             font-size: 1.2em;
             font-weight: bold;
-            margin-top: 10px;
-            margin-left: 100px;;
+            margin-left: 100px;
         }
         .newsContent{
             width: 100%;
             height: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-        }
-        .new{
-            width: 100%;
-            height: 100%;
-        }
-        .newTitle{
-            margin-left: 20px;
-            font-weight: bold;
-        }
-        .newsubTitle{
-            margin-left: 10px;
-        }
-        .newMain{
-            width: 90%;
-            height: 100%;
-            margin-bottom: -200px;
-            margin-left: 20px;
         }
 .gestion{
     width: 100%;

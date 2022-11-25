@@ -9,7 +9,7 @@
 }
 .CreateOrderChart{
     width: 50%;
-    height: 90%;
+    height: 95%;
     background-color: white;
 }
 .CreateOrderContent{
@@ -29,4 +29,9 @@
 .CreateOrderBtn{
     align-self: end;
     justify-self: end;
+}
+
+.btnCreate{
+    background-color: #666666;
+    height: 28px;
 }

@@ -6,6 +6,7 @@
     background-color: #f2f2f2;
     display: grid;
     grid-template-rows: 70% 30%;
+    overflow: hidden;
 }
 .Footer1{
     width: 100%;
@@ -50,10 +51,10 @@
         .emailsub{
             display: flex;
         }
-        .btn-dark{
+        .btnFooter{
             width: 100px;
             height: 25px;
-            position: absolute;
+            position: absolute; 
             left: 250px;
             transform: translateY(-4px);
             background-color: #666666;

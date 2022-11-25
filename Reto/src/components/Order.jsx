@@ -14,10 +14,10 @@ export const Order = ({OrderData}) => {
             <li>{OrderData.CiudadEntrega}</li>
             <li>{OrderData.AddEntrega}</li>
             <li>{OrderData.status}</li>
-            <li className='btn'>
-                <Button BDisplay="Editar" className="btn btn-light btnOrder" addr="UpdateOrder"></Button>
-                <buttonc lassName="btn btn-light btnOrder"
-                onClick={()=>{confirm("¿Está seguro que desea eliminar esta orden")}}>Eliminar</buttonc>
+            <li className='btnGroup'>
+                <Button BDisplay="Editar" className="btn btn-dark btnOrder" addr="/UpdateOrder" props={OrderData}></Button>
+                <button className="btn btn-dark btnOrder"
+                onClick={()=>{confirm("¿Está seguro que desea eliminar esta orden")}}>Eliminar</button>
             </li>
         </ul>
     )

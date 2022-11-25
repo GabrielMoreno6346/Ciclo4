@@ -13,14 +13,6 @@ export const Footer = () => {
             <div className="Footer1 footsubcont">
                 <div>
                     <span>Empresa</span>
-                    {/* <div className="lists">
-                        <div className="sublist">
-                            <Link addr='/' LDisplay="Terminos y condiciones"></Link>
-                        </div>
-                        <div className="sublist">
-                            <Link addr='/' LDisplay="Politica de privacidad"></Link>
-                        </div>
-                    </div> */}
                     <div className="lists">
                         <div className="sublist">
                             <Link addr='/' LDisplay="Terminos y condiciones"></Link>
@@ -34,20 +26,12 @@ export const Footer = () => {
                         <label for="formGroupExampleInput" class="form-label">Suscribete para obtener neustras últimas noticias</label>
                         <div className="emailsub">
                             <input type="text" className="form-control subs" id="formGroupExampleInput" placeholder="Email"></input>
-                            <button type="button" class="btn btn-dark">Suscribirse</button>
+                            <button type="button" class="btn btn-dark btnFooter">Suscribirse</button>
                         </div>
                     </div>
                 </div>
                 <div>
                     <span>Links de interés</span>
-                    {/* <div className="lists">
-                        <div className="sublist">
-                            <Link addr='/' LDisplay="Servicios"></Link>
-                        </div>
-                        <div className="sublist">
-                            <Link addr='/' LDisplay="Acerca de nosotros"></Link>
-                        </div>
-                    </div> */}
                     <div className="lists">
                         <div className="sublist">
                             <Link addr='/' LDisplay="Servicios"></Link>

@@ -34,9 +34,17 @@
     display: flex;
     justify-content: space-evenly;
 }
+    .delicr label{
+        transform: translateY(5px);
+        margin-left: 5px;
+    }
 .Time{
     width: 140px;
 }
 .sep{
     margin: 5px;
+}
+
+input{
+    color: #6c757d;
 }

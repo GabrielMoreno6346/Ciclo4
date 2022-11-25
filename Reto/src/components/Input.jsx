@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Input = ({holder,value, handleOnChange, attribute}) => {
+export const Input = ({holder,value, handleOnChange, attribute, className}) => {
     return(
-        <input className="form-control subs" id="formGroupExampleInput" type="text" placeholder={holder} value={value} 
+        <input className={className} type="text" placeholder={holder} value={value} 
         onChange={(event)=>handleOnChange(attribute, event.target.value)}></input>
     )
 }
