@@ -12,7 +12,7 @@ function Login() {
       <div className='LoginContent'>
         <span>Iniciar Sesión</span>
         <div className='LoginForm'>
-          <Link addr='/SignUp' LDisplay="Registrarse"></Link>
+          <Link addr='/SignUp' LDisplay="Registrarse" className="logInLink"></Link>
           <Input className="form-control subs imp1" holder="Usuario"></Input>
           <Input className="form-control subs imp2" holder="Contraseña"></Input>
           <Button className= "btn btn-light Loginbtn" BDisplay="Login" addr="/OrdersList"></Button>

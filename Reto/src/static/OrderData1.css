@@ -18,12 +18,16 @@
     transform: translateY(10%);
     color: black;
 }
-.dat{
+.dat{ 
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 40% 60%;
 }
+    .TimeInfo{
+        padding-left: 30px;
+    }
 .delic{
     width: 100%;
     display: flex;
@@ -47,4 +51,8 @@
 
 input{
     color: #6c757d;
+}
+input[type="date"], input[type="time"]{
+    border-radius: 5px;
+    border: solid 1px #ced4da;
 }

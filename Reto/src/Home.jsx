@@ -2,19 +2,23 @@ import './static/Home.css'
 import {NavBar} from './components/NavBar'
 import {Footer} from './components/Footer'
 import {Comment} from './components/Comment'
+import {Button} from './components/Button'
 import {New} from './components/New'
 import BlankProfilePicture from './static/BlankProfilePicture.jpg'
+import homeimg from './static/home.jpg'
 
 function Home() {
     return (
       <div className="cont">
         <NavBar className="NavBar"></NavBar>
         <div className="HomeContent">
-          <div className="gest"></div>
-          <div className="comm">
-            <div>
-              <div className='Lorem Ltitle'>Lo que dicen nuestros usuarios:</div>
-            </div>          
+          <div className="gest">
+            <img src={homeimg} alt="HomePicture"></img>
+            <div className='intHome'>
+              <span>¡Nunca fue tan fácil envíar tus paquetes!</span>
+              <span>Los recogemos en tu casa y los enviamos a dónde necesites YA</span>
+              <Button className="btn btn-dark" BDisplay="Gestiona tus ordenes Ahora" addr="/SignUp"></Button>
+            </div>
           </div>
           <div className="newsSection">
             <div className='newsMark'>Noticias</div>
@@ -35,6 +39,17 @@ function Home() {
               Content="De acuerdo a una investigación realizada por la Universidad Nacional de Colombia, en la actualidad los colombianos están prefieriendo las compras y procesos en línea, razón por la cuál incrementan cada vez más los métodos de pago en línea y el uso de tarjetas de crédito."
               ></New>
             </div>
+          </div>
+          <div className="comments">
+              <div className='Ltitle'>Lo que dicen nuestros usuarios:</div>
+              <div className='comm'>
+                <Comment></Comment>
+                <Comment></Comment>
+                <Comment></Comment>
+                <Comment></Comment>
+                <Comment></Comment>
+                <Comment></Comment>
+              </div>          
           </div>
         </div>
         <Footer className="Footer"></Footer>

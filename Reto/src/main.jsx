@@ -6,6 +6,7 @@ import OrdersList from './OrdersList'
 import SignUp from './SignUp'
 import UpdateOrder from './UpdateOrder'
 import Home from './Home'
+import AboutUs from './AboutUs'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="OrdersList" element={<OrdersList/>}></Route>
         <Route path="SignUp" element={<SignUp/>}></Route>
         <Route path="UpdateOrder" element={<UpdateOrder/>}></Route>
+        <Route path="AboutUs" element={<AboutUs/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

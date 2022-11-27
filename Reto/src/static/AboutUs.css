@@ -1,0 +1,40 @@
+@import "General.css";
+
+.AboutUsBody{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 100% 20%;
+    overflow-y: auto;
+}
+.AboutUsContent{
+    display: grid;
+    grid-template-rows: 10% 34% 29% 25%;
+}
+    .AUTitle{
+        font-size: 1.5em;
+        font-weight: bold;
+        align-self: center;
+        justify-self: center;
+    }
+    .SubAUTitle{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 10px;
+        margin: 0 250px;
+    }
+    .AboutUsContent img{
+        width: 130px;
+        height: 130px;
+        align-self: center;
+        border-radius: 5px;
+    }
+    .SectionAU{
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        margin: 5px 200px;
+    }
+    .SectionAU span{
+        margin-left: 40px;
+        text-align: justify;
+    }

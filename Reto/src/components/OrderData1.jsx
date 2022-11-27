@@ -48,13 +48,16 @@ export const OrderData1=({date, time1, time2, important})=>{
         <span className='OrderData1Title'>Crear Orden</span> 
         <div className='dat'>
           <span>Fecha y franja horaria disponible para la recogida del paquete</span>
-          <input className='date' type="date" min={getDate()} value={state.date} 
-            onChange={(event) => handleOnChange("date", event.target.value)}></input>
-          <input className='Time' type="time" min={getTime()} value={state.time1} 
-            onChange={(event) => {handleOnChange("time1", event.target.value); handleOnchangeTime1(event)}}></input>
-          <span className='sep'> - </span>
-          <input className='Time' type="time" min={getTime()} value={state.time2}
-            onChange={(event) => {handleOnChange("time2", event.target.value); handleOnchangeTime2(event)}}></input>
+          <div className='TimeInfo'>
+            <input className='date' type="date" min={getDate()} value={state.date} 
+              onChange={(event) => handleOnChange("date", event.target.value)}></input>
+              <div></div>
+            <input className='Time' type="time" min={getTime()} value={state.time1} 
+              onChange={(event) => {handleOnChange("time1", event.target.value); handleOnchangeTime1(event)}}></input>
+            <span className='sep'> - </span>
+            <input className='Time' type="time" min={getTime()} value={state.time2}
+              onChange={(event) => {handleOnChange("time2", event.target.value); handleOnchangeTime2(event)}}></input>
+            </div>
         </div>
         <div className='delic'>
           <span>¿Es mercancía delicada?</span>

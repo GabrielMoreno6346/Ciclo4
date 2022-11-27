@@ -1,7 +1,7 @@
 import '../static/NavBar.css'
 import Ya from '../static/Logo.png'
 import {Button} from './Button'
-import {LinkB} from './LinkB'
+import {Link} from './Link'
 
 export const NavBar = () => {
     return(
@@ -14,11 +14,11 @@ export const NavBar = () => {
                 </div>
                 <div className='menu'>
                     <div className='links'>
-                        <LinkB addr='/Home' LDisplay="INICIO"></LinkB>
+                        <Link addr='/' LDisplay="INICIO" className="LinkNav"></Link>
                         <div></div>
-                        <LinkB addr='/' LDisplay="ACERCA DE NOSOTROS"></LinkB>
+                        <Link addr='/AboutUs' LDisplay="ACERCA DE NOSOTROS" className="LinkNav"></Link>
                         <div></div>
-                        <LinkB addr='/' LDisplay="SERVICIOS"></LinkB>
+                        <Link addr='/OrdersList' LDisplay="SERVICIOS" className="LinkNav"></Link>
                     </div>
                     <Button BDisplay="Ingresar" addr="/Login" className="btn btn-light"></Button>
                 </div>

@@ -29,6 +29,11 @@
     height: 30px;
     width: 80px;
 }
+.logInLink:hover{
+    color: white;
+    opacity: 0.7;
+    text-decoration: underline;
+}
 .imp1{
     margin: 10px;
     margin-top: 20px;

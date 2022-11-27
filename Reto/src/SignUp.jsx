@@ -9,12 +9,17 @@ function SignUp() {
       <div className='SignupBody'>
         <NavBar></NavBar>
         <div className='SignUpContent'>
+          <div>
+            <span>Registrarse</span>
+            <p>Registrar tu usuario nunca fue tan sencillo.</p>
+            <p>Ingresa tus datos y comienza a usar nuestros servicios YA.</p>
+          </div>
           <div className='SignUpForm'>
-            <Input holder="Nombres"></Input>
-            <Input holder="Usuario"></Input>
-            <Input holder="Contraseña"></Input>
-            <Input holder="Correo"></Input>
-            <Button BDisplay="Crear" addr="/OrdersList"></Button>
+            <Input holder="Nombres" className="form-control subs"></Input>
+            <Input holder="Usuario" className="form-control subs"></Input>
+            <Input holder="Contraseña" className="form-control subs"></Input>
+            <Input holder="Correo" className="form-control subs"></Input>
+            <Button BDisplay="Crear" addr="/OrdersList" className="btn btn-light btnSignUp"></Button>
           </div>
         </div>
         <Footer></Footer>
