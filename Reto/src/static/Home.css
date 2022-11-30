@@ -41,7 +41,6 @@
         }
     .comments{
         display: grid;
-        grid-template-rows: ;
     }
     .comm{
         height: 100%;

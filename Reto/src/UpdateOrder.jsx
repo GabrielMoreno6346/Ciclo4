@@ -15,13 +15,13 @@ function UpdateOrder(props) {
       <div className="UpdateOrderContent">
         <div className='UpdateOrderChart'>
           <div className='UpdateOrderForm'>
-            <OrderData1 date={date} time1={time1} time2={time2} important={important}></OrderData1>
+            <OrderData1  title="Actualizar Orden" date={date} time1={time1} time2={time2} important={important}></OrderData1>
             <OrderData2
               ido={ido} Alto={Alto} Largo={Largo} Ancho={Ancho}  Peso={Peso} nr={nr} cr={cr}
               AddRecogida={AddRecogida} CiudadRecogida={CiudadRecogida} nd={nd} cd={cd} AddEntrega={AddEntrega}
               CiudadEntrega={CiudadEntrega} status={status}>
             </OrderData2>
-            <Button BDisplay="Update Orden" addr="/OrdersList" className="btn btn-dark UpdateOrderbtn"></Button>
+            <Button BDisplay="Actualizar Orden" addr="/OrdersList" className="btn btn-dark UpdateOrderbtn"></Button>
           </div>
         </div>
       </div>

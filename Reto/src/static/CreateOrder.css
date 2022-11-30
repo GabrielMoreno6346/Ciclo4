@@ -11,6 +11,7 @@
     width: 50%;
     height: 95%;
     background-color: white;
+    border-radius: 10px;
 }
 .CreateOrderContent{
     grid-row: 2 / 5;

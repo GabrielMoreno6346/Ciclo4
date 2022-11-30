@@ -34,7 +34,7 @@ function OrdersList() {
       <div className='OrdersListContent'>
         <div className='OrdersListMain'>
             <Link addr="/CreateOrder" className="OrdersListLink" LDisplay="Crear Order"></Link>
-            <ul className='OrdersListHeader'>
+            <ul className='OrdersListHeader'> 
                 <li>Servicio</li>
                 <li>Fecha</li>
                 <li>Ciudad Entrega</li>

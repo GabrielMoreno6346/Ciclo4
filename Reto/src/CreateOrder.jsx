@@ -12,7 +12,7 @@ function CreateOrder() {
       <div className='CreateOrderContent'>
         <div className='CreateOrderChart'>
           <div className='CreateOrderForm'>
-              <OrderData1></OrderData1>
+              <OrderData1 title="Crear Orden"></OrderData1>
               <OrderData2></OrderData2>
               <div className="CreateOrderBtn">
                 <Button BDisplay="Crear Orden" addr="/OrdersList" className="btn btn-dark btnCreate"></Button>

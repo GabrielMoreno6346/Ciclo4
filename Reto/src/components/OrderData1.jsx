@@ -1,7 +1,7 @@
 import '../static/OrderData1.css'
 import React, { useState } from 'react'
 
-export const OrderData1=({date, time1, time2, important})=>{
+export const OrderData1=({date, time1, time2, important, title})=>{
   const [state, setState] = useState({
     date:date, time1:time1, time2:time2, important:important
   })
@@ -45,7 +45,7 @@ export const OrderData1=({date, time1, time2, important})=>{
   return (
     <div className='OrderData1Body'>
       <div className='OrderData1Form'>
-        <span className='OrderData1Title'>Crear Orden</span> 
+        <span className='OrderData1Title'>{title}</span> 
         <div className='dat'>
           <span>Fecha y franja horaria disponible para la recogida del paquete</span>
           <div className='TimeInfo'>
